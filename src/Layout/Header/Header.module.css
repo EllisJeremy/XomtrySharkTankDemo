@@ -1,3 +1,14 @@
 header {
-  background-color: aqua;
+  padding: 16px;
+  padding: 0px;
+  height: 109px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
 }

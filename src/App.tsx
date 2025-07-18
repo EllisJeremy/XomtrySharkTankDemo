@@ -1,11 +1,14 @@
-import EducationPage from "./pages/EducationPage"
+import EducationPage from "./pages/EducationPage";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
     <>
-      <EducationPage />
+      <Layout>
+        <EducationPage />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
