@@ -1,9 +1,9 @@
-
+import EducationPage from "./pages/EducationPage"
 
 function App() {
   return (
     <>
-      placeHolder
+      <EducationPage />
     </>
   )
 }
