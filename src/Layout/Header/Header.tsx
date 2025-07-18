@@ -1,11 +1,10 @@
 import styles from "./Header.module.css";
-import xometry from "../../assets/xometry.svg";
-import ss from "../../assets/ss.png";
+import header from "../../assets/header.png";
 
 export default function Header() {
   return (
     <header>
-      <img src={ss}></img>
+      <img src={header}></img>
     </header>
   );
 }
