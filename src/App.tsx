@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EducationPage from "./pages/EducationPage/EducationPage";
 import ResourcesPage from "./pages/ResourcesPage/ResourcesPage";
 import Layout from "./Layout/Layout";
@@ -10,11 +6,11 @@ import Layout from "./Layout/Layout";
 function App() {
   return (
     <Router>
-      <Layout >
-      <Routes>
+      <Layout>
+        <Routes>
           <Route index element={<EducationPage />} />
           <Route path="Resources" element={<ResourcesPage />} />
-      </Routes>
+        </Routes>
       </Layout>
     </Router>
   );

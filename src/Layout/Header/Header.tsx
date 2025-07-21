@@ -4,7 +4,7 @@ import header from "../../assets/header.png";
 export default function Header() {
   return (
     <header>
-      <img src={header}></img>
+      <img src={header} className={styles.headerImg}></img>
     </header>
   );
 }
