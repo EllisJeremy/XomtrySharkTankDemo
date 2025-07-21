@@ -1,6 +1,6 @@
 import styles from "./ResourcesPage.module.css";
 
-export default function EducationPage() {
+export default function ResourcesPage() {
   return (
     <div>
       <h1 className={styles.header}>resources Page</h1>
