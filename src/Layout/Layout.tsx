@@ -10,9 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <main className={styles.main}>
-        <div className={styles.marginDiv}>{children} </div>
-      </main>
+      <main className={styles.main}>{children}</main>
     </>
   );
 }
