@@ -5,6 +5,24 @@ export default function EducationPage() {
     <div>
       <h1 className={styles.header}>Education Page</h1>
       <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
+      <h1 className={styles.header}>Education Page</h1>
+      <p>This is the Education page content.</p>
     </div>
   );
 }
