@@ -1,4 +1,4 @@
-import EducationPage from "./pages/EducationPage";
+import EducationPage from "./pages/EducationPage/EducationPage";
 import Layout from "./Layout/Layout";
 
 function App() {
