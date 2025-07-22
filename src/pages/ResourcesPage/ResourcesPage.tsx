@@ -1,224 +1,270 @@
+import styles from './ResourcesPage.module.css';
+import introImg from '../../assets/introImg.jpeg';
 
 export default function ResourcesPage() {
   return (
-    <div className="pad-6">
-      <h1 className="txt-page-title">Student Resources</h1>
-      <p className="txt-body">Discover helpful resources, guides, and tools for all your manufacturing needs.</p>
-      
-      <div style={{
-        marginTop: "var(--l-space-6)",
-        display: "flex",
-        flexDirection: "column",
-        gap: "var(--l-space-8)"
-      }}>
-        
-        {/* Getting Started Section */}
-        <section>
-          <h2 className="txt-h2" style={{marginBottom: "var(--l-space-4)"}}>Getting Started</h2>
-          <div className="bg-gray-50 radius-2 pad-5">
-            <h3>Essential Resources for New Students</h3>
-            <p>Start your manufacturing journey with these fundamental guides and tools. Perfect for beginners who want to understand the basics of design and manufacturing.</p>
-            <div className="gap-4 flex flex-wrap" style={{marginTop: "var(--l-space-4)"}}>
-              <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "200px"}}>
-                <h4>📋 Design Guidelines</h4>
-                <p className="txt-small">Learn the fundamentals of designing for manufacturing</p>
-                <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                  <l-badge count="25+" kind="primary"></l-badge>
-                  <span className="txt-small">guides available</span>
-                </div>
-              </div>
-              <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "200px"}}>
-                <h4>📐 Material Selection</h4>
-                <p className="txt-small">Choose the right materials for your projects</p>
-                <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                  <l-badge count="100+" kind="neutral"></l-badge>
-                  <span className="txt-small">materials</span>
-                </div>
-              </div>
-              <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "200px"}}>
-                <h4>🔧 Basic Tools</h4>
-                <p className="txt-small">Essential tools and calculators for students</p>
-                <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                  <l-badge count="8" kind="success"></l-badge>
-                  <span className="txt-small">tools</span>
-                </div>
-              </div>
+    <>
+      <div className={styles.marginDiv}>
+        <div className={styles.introDiv}>
+          <div className={styles.introContentDiv}>
+            <h1 className={styles.header}>
+              Student Resources
+            </h1>
+            <p className={styles.pageDescription}>
+        Explore our consolidated library of resources for students. Curated for students who are just starting out in the field of manufacturing.
+      </p>
+          </div>
+          <div className={styles.introImgDiv}>
+            <img src={introImg} className={styles.introImg} alt="Introduction" />
+          </div>
+        </div>
+      </div>
+      <div className={styles.container}>
+
+      {/* Featured Section */}
+      {/* <section className={styles.featuredSection}>
+        <div className={styles.featuredContent}>
+          <div className={styles.featuredText}>
+            <h2>Start Your Manufacturing Journey</h2>
+            <p>
+              Access expert-curated content, step-by-step tutorials, and real-world case studies 
+              designed specifically for students and emerging engineers.
+            </p>
+          </div>
+          <div className={styles.statsGrid}>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>50+</div>
+              <div className={styles.statLabel}>Design Guides</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>100+</div>
+              <div className={styles.statLabel}>Articles</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>25+</div>
+              <div className={styles.statLabel}>Video Tutorials</div>
             </div>
           </div>
-        </section>
+        </div>
+      </section> */}
 
-        {/* 3D Printing Resources Section */}
-        <section>
-          <h2 className="txt-h2" style={{marginBottom: "var(--l-space-4)"}}>3D Printing Resources</h2>
-          <div className="brd radius-2 pad-5">
-            <div className="gap-4 flex flex-column">
-              <div>
-                <h3>Additive Manufacturing Hub</h3>
-                <p>Everything you need to know about 3D printing, from design considerations to post-processing techniques.</p>
-              </div>
-              
-              <div className="gap-4 flex flex-wrap">
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>🖨️ Design for 3D Printing</h4>
-                  <p className="txt-small">Overhangs, supports, wall thickness, and print orientation guidelines</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="primary">Best Practices</l-chip>
-                    <l-chip kind="neutral">PDF Guide</l-chip>
-                  </div>
-                  <l-button kind="primary" style={{marginTop: "var(--l-space-3)"}}>View Guidelines</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>🧪 Material Properties</h4>
-                  <p className="txt-small">PLA, ABS, PETG, Resin - understand material characteristics</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="secondary">Database</l-chip>
-                    <l-chip kind="success">Interactive</l-chip>
-                  </div>
-                  <l-button kind="secondary" style={{marginTop: "var(--l-space-3)"}}>Explore Materials</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>⚙️ Post-Processing</h4>
-                  <p className="txt-small">Sanding, painting, assembly, and finishing techniques</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="warning">Video Tutorials</l-chip>
-                    <l-chip kind="neutral">Step-by-Step</l-chip>
-                  </div>
-                  <l-button kind="outline" style={{marginTop: "var(--l-space-3)"}}>Learn Techniques</l-button>
-                </div>
-              </div>
+      <div className={styles.sectionsContainer}>
+
+        {/* Design Guides Section */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className={styles.sectionTitle}>Design Guides</h2>
+              <p className={styles.sectionDescription}>
+                In-depth design guides full of best practices for all manufacturing processes.
+              </p>
             </div>
+            <button className={styles.viewAllButton}>View All Design Guides Content</button>
           </div>
-        </section>
-
-        {/* CNC Milling Resources Section */}
-        <section>
-          <h2 className="txt-h2" style={{marginBottom: "var(--l-space-4)"}}>CNC Milling Resources</h2>
-          <div className="brd radius-2 pad-5">
-            <div className="gap-4 flex flex-column">
-              <div>
-                <h3>Precision Machining Center</h3>
-                <p>Master the art of CNC milling with comprehensive guides on tooling, feeds, speeds, and precision manufacturing.</p>
+          
+          <div className={styles.articlesGrid}>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Download</div>
+              <h3 className={styles.articleTitle}>Design Guide: 3D Printing Fundamentals</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Team Xometry</p>
               </div>
-              
-              <div className="gap-4 flex flex-wrap">
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>🔩 Design for Machining</h4>
-                  <p className="txt-small">Tolerances, surface finishes, and machinable features</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="primary">DFM Guidelines</l-chip>
-                    <l-chip kind="purple">Examples</l-chip>
-                  </div>
-                  <l-button kind="primary" style={{marginTop: "var(--l-space-3)"}}>View Guidelines</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>🛠️ Tooling & Setup</h4>
-                  <p className="txt-small">End mills, cutting parameters, and workholding strategies</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="secondary">Tool Library</l-chip>
-                    <l-chip kind="warning">Safety Guide</l-chip>
-                  </div>
-                  <l-button kind="secondary" style={{marginTop: "var(--l-space-3)"}}>Learn More</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>📊 Feeds & Speeds</h4>
-                  <p className="txt-small">Calculate optimal cutting parameters for different materials</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="success">Calculator</l-chip>
-                    <l-chip kind="neutral">Reference Tables</l-chip>
-                  </div>
-                  <l-button kind="outline" style={{marginTop: "var(--l-space-3)"}}>Use Calculator</l-button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Sheet Metal Resources Section */}
-        <section>
-          <h2 className="txt-h2" style={{marginBottom: "var(--l-space-4)"}}>Sheet Metal Resources</h2>
-          <div className="brd radius-2 pad-5">
-            <div className="gap-4 flex flex-column">
-              <div>
-                <h3>Sheet Metal Fabrication</h3>
-                <p>Learn the fundamentals of sheet metal design, from bend allowances to laser cutting optimization.</p>
-              </div>
-              
-              <div className="gap-4 flex flex-wrap">
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>📐 Bend Design</h4>
-                  <p className="txt-small">Bend radii, allowances, and relief cuts for optimal forming</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="primary">Design Rules</l-chip>
-                    <l-chip kind="success">Calculator</l-chip>
-                  </div>
-                  <l-button kind="primary" style={{marginTop: "var(--l-space-3)"}}>View Guidelines</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>⚡ Laser Cutting</h4>
-                  <p className="txt-small">Kerf compensation, nesting, and cutting parameter optimization</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="secondary">Optimization</l-chip>
-                    <l-chip kind="warning">Material Guide</l-chip>
-                  </div>
-                  <l-button kind="secondary" style={{marginTop: "var(--l-space-3)"}}>Learn More</l-button>
-                </div>
-                
-                <div className="bg-gray-50 radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-                  <h4>🔧 Assembly Methods</h4>
-                  <p className="txt-small">Welding, fasteners, and joining techniques for sheet metal</p>
-                  <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                    <l-chip kind="purple">Techniques</l-chip>
-                    <l-chip kind="neutral">Best Practices</l-chip>
-                  </div>
-                  <l-button kind="outline" style={{marginTop: "var(--l-space-3)"}}>Explore Options</l-button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Additional Resources Section */}
-        <section>
-          <h2 className="txt-h2" style={{marginBottom: "var(--l-space-4)"}}>Additional Resources</h2>
-          <div className="gap-4 flex flex-wrap">
-            <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-              <h4>📖 Technical Papers</h4>
-              <p>In-depth research and case studies on advanced manufacturing topics.</p>
-              <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                <l-badge count="50+" kind="neutral"></l-badge>
-                <span className="txt-small">papers available</span>
-              </div>
-              <l-button kind="text" style={{marginTop: "var(--l-space-3)"}}>Browse Papers</l-button>
+              <p className={styles.articleDescription}>
+                Complete guide covering design considerations, material selection, and optimization techniques for 3D printing projects.
+              </p>
+              <button className={styles.primaryButton}>Download Guide</button>
             </div>
             
-            <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-              <h4>🎥 Video Library</h4>
-              <p>Comprehensive video tutorials covering all manufacturing processes.</p>
-              <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                <l-badge count="100+" kind="primary"></l-badge>
-                <span className="txt-small">videos</span>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Download</div>
+              <h3 className={styles.articleTitle}>Design Guide: CNC Machining Essentials</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Team Xometry</p>
               </div>
-              <l-button kind="text" style={{marginTop: "var(--l-space-3)"}}>Watch Videos</l-button>
+              <p className={styles.articleDescription}>
+                Learn the fundamentals of designing for CNC machining, including tolerances, surface finishes, and cost optimization.
+              </p>
+              <button className={styles.primaryButton}>Download Guide</button>
             </div>
             
-            <div className="brd radius-2 pad-4" style={{flex: "1", minWidth: "250px"}}>
-              <h4>💬 Expert Support</h4>
-              <p>Connect with industry professionals for personalized guidance.</p>
-              <div className="gap-2 flex" style={{marginTop: "var(--l-space-2)"}}>
-                <l-badge count="24/7" kind="success"></l-badge>
-                <span className="txt-small">support available</span>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Article</div>
+              <h3 className={styles.articleTitle}>How to Create Effective Technical Drawings</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Joel Schadegg</p>
+                <p className={styles.articleReadTime}>10 min read</p>
               </div>
-              <l-button kind="text" style={{marginTop: "var(--l-space-3)"}}>Get Help</l-button>
+              <p className={styles.articleDescription}>
+                Master the art of technical drawing with this comprehensive guide to dimensioning, tolerancing, and drawing standards.
+              </p>
+              <button className={styles.secondaryButton}>Read Article</button>
+            </div>
+          </div>
+        </section>
+
+        {/* 3D Printing Design Section */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className={styles.sectionTitle}>3D Printing Design</h2>
+              <p className={styles.sectionDescription}>
+                The latest news, trends, and manufacturing design tips for additive manufacturing.
+              </p>
+            </div>
+            <button className={styles.viewAllButton}>View All 3D Printing Design Content</button>
+          </div>
+          
+          <div className={styles.articlesGrid}>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Article</div>
+              <h3 className={styles.articleTitle}>Everything You Need to Know About Support Structures</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Greg Paulsen</p>
+                <p className={styles.articleReadTime}>8 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Understanding when and how to use support structures effectively in your 3D printing projects.
+              </p>
+              <button className={styles.secondaryButton}>Read Article</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Article</div>
+              <h3 className={styles.articleTitle}>Material Selection Guide for Student Projects</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Dean McClements</p>
+                <p className={styles.articleReadTime}>12 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Comprehensive comparison of PLA, ABS, PETG, and specialty filaments for different applications.
+              </p>
+              <button className={styles.secondaryButton}>Read Article</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Video</div>
+              <h3 className={styles.articleTitle}>Print Orientation: Optimizing Strength and Surface Quality</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Kat de Naoum</p>
+                <p className={styles.articleReadTime}>15 min watch</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Learn how part orientation affects strength, surface finish, and print success rates.
+              </p>
+              <button className={styles.secondaryButton}>Watch Video</button>
+            </div>
+          </div>
+        </section>
+
+        {/* Machining Design Section */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className={styles.sectionTitle}>Machining Design</h2>
+              <p className={styles.sectionDescription}>
+                The latest news, trends, and manufacturing design tips for custom machined and fabricated parts.
+              </p>
+            </div>
+            <button className={styles.viewAllButton}>View All Machining Design Content</button>
+          </div>
+          
+          <div className={styles.articlesGrid}>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Article</div>
+              <h3 className={styles.articleTitle}>Understanding CNC Tooling and Tool Selection</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Dean McClements</p>
+                <p className={styles.articleReadTime}>14 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Comprehensive guide to selecting the right cutting tools for different materials and machining operations.
+              </p>
+              <button className={styles.secondaryButton}>Read Article</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Article</div>
+              <h3 className={styles.articleTitle}>Design for Manufacturability in CNC Machining</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Joel Schadegg</p>
+                <p className={styles.articleReadTime}>9 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Learn how to design parts that are both functional and cost-effective to manufacture.
+              </p>
+              <button className={styles.secondaryButton}>Read Article</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Tool</div>
+              <h3 className={styles.articleTitle}>Feeds and Speeds Calculator</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Team Xometry</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Interactive tool to calculate optimal cutting parameters for different materials and cutting tools.
+              </p>
+              <button className={styles.primaryButton}>Use Calculator</button>
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies Section */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className={styles.sectionTitle}>Student Success Stories</h2>
+              <p className={styles.sectionDescription}>
+                Real-world examples of student projects and how they overcame manufacturing challenges.
+              </p>
+            </div>
+            <button className={styles.viewAllButton}>View All Case Studies</button>
+          </div>
+          
+          <div className={styles.articlesGrid}>
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Case Study</div>
+              <h3 className={styles.articleTitle}>Senior Design Project: Autonomous Drone Frame</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Tricia Contreras</p>
+                <p className={styles.articleReadTime}>6 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                How a team of engineering students designed and manufactured a lightweight, durable drone frame for their capstone project.
+              </p>
+              <button className={styles.secondaryButton}>Read Case Study</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Case Study</div>
+              <h3 className={styles.articleTitle}>Formula SAE: Rapid Prototyping for Competition</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Greg Paulsen</p>
+                <p className={styles.articleReadTime}>8 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Learn how university racing teams use rapid prototyping to iterate designs and meet competition deadlines.
+              </p>
+              <button className={styles.secondaryButton}>Read Case Study</button>
+            </div>
+            
+            <div className={styles.articleCard}>
+              <div className={styles.articleType}>Case Study</div>
+              <h3 className={styles.articleTitle}>Biomedical Device Development: From Concept to Prototype</h3>
+              <div className={styles.articleMeta}>
+                <p className={styles.articleAuthor}>By Kat de Naoum</p>
+                <p className={styles.articleReadTime}>10 min read</p>
+              </div>
+              <p className={styles.articleDescription}>
+                Student team develops a novel medical device prototype using advanced manufacturing techniques.
+              </p>
+              <button className={styles.secondaryButton}>Read Case Study</button>
             </div>
           </div>
         </section>
 
       </div>
     </div>
+    </>
   );
 }
