@@ -1,5 +1,6 @@
 import styles from "./EducationPage.module.css";
 import introImg from "../../assets/introImg.jpeg";
+import Button from "../../components/Button/Button";
 
 export default function EducationPage() {
   return (
@@ -10,6 +11,7 @@ export default function EducationPage() {
             Prototypes and Production Parts for Engineering Students &
             Universities
           </h1>
+          <Button text={"Get Your Instant Quote"} />
         </div>
         <div className={styles.introImgDiv}>
           <img src={introImg} className={styles.introImg}></img>

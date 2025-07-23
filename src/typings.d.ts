@@ -6,6 +6,7 @@ declare module "*.png";
 
 declare module "*.jpeg";
 
+/*
 import 'react';
 
 declare module 'react' {
@@ -53,3 +54,4 @@ declare module 'react' {
     }
   }
 }
+*/
