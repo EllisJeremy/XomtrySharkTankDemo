@@ -41,13 +41,20 @@ export default function EducationPage() {
           </div>
           <div className={styles.gridDiv}>
             <GridItem
-              title="One-Stop Shop for Metal & Plastic Parts"
-              description="Xometry offers over 16 manufacturing processes on one platform, including CNC machining, sheet metal fabrication, and 3D printing. For high-volume production, we provide injection moulding and die casting, with access to 10,000+ global manufacturers."
+              title="Exclusive Student Discount"
+              description="Engineering students and university teams get a 7% academic discount on all custom parts ordered through Xometry. Build your prototypes affordably without compromising on quality or speed."
             />
+
             <GridItem
               title="Instant Quoting Engine"
               description="Upload your CAD file, configure your manufacturing specs, and get an instant quote. You can add multiple parts in one quote and place an order in a few clicks. Xometry handles everything from logistics to delivery."
             />
+
+            <GridItem
+              title="One-Stop Shop for Metal & Plastic Parts"
+              description="Xometry offers over 16 manufacturing processes on one platform, including CNC machining, sheet metal fabrication, and 3D printing. For high-volume production, we provide injection moulding and die casting, with access to 10,000+ global manufacturers."
+            />
+
             <GridItem
               title="DFM Feedback"
               description="We help students and engineers refine their designs with real-time Design for Manufacturing (DFM) feedback. Whether it's CNC, 3D printing, or sheet metal, your part is reviewed for cost-effectiveness and manufacturability."
