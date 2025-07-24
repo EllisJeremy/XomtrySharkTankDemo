@@ -7,6 +7,12 @@ import Slider from "../../components/Slider/Slider";
 import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
 import UCIrvineProject from "../../assets/UCIrvineProject.avif";
 
+import UCSanDiegoLogo from "../../assets/UCSanDiegoLogo.png";
+import UCSanDiegoProject from "../../assets/UCSanDiegoProject.avif";
+
+import UPennProject from "../../assets/UPennProject.avif";
+import UPennLogo from "../../assets/UPennLogo.png";
+
 export default function EducationPage() {
   const handleGetQuoteClick = () => {
     window.location.href = "https://www.xometry.com/quoting/home/?";
@@ -19,16 +25,17 @@ export default function EducationPage() {
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
     },
     {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      schoolName: "UC San Diego",
+      schoolLogo: UCSanDiegoLogo,
+      projectImg: UCSanDiegoProject,
+      description: "These Students Invented a Way to Brew Beer on the Moon",
     },
     {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      schoolName: "U Penn",
+      schoolLogo: UPennLogo,
+      projectImg: UPennProject,
+      description:
+        "UPenn Racing Team Hopes to Shatter Records With Xometry's Help",
     },
     {
       schoolName: "UC Irvine",
