@@ -136,7 +136,7 @@ export default function EducationPage() {
       </div>
 
       <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}>
-        <div className={styles.contentDiv} style={{ width: "1360px", marginBottom: "75px" }}>
+        <div className={styles.contentDiv} style={{ width: "1380px", marginBottom: "75px" }}>
           <div className={styles.H2HeaderDiv}>
             <h2>Student Projects Made With Xometry</h2>
             <Slider items={items}></Slider>
@@ -145,7 +145,7 @@ export default function EducationPage() {
       </div>
 
       <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
-        <div className={styles.contentDiv} style={{ width: "1360px" }}>
+        <div className={styles.contentDiv}>
           <div className={styles.H2HeaderDiv}>
             <h2>Xometry Education Services</h2>
             <div className={styles.servicesGridDiv}>
