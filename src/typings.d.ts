@@ -3,9 +3,13 @@ declare module "*.module.css";
 declare module "*.css";
 
 declare module "*.png";
+declare module "*.svg";
+declare module "swiper/css";
+declare module "*.avif";
 
 declare module "*.jpeg";
 
+/*
 import 'react';
 
 declare module 'react' {
@@ -53,3 +57,4 @@ declare module 'react' {
     }
   }
 }
+*/

@@ -1,8 +1,8 @@
 .marginDiv {
-  background-color: #e6f0fc;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 75px;
 }
 
 .introDiv {
@@ -19,6 +19,8 @@
 .header {
   margin: 0;
   font-size: 48px;
+  line-height: 56px;
+  font-weight: 600;
 }
 .introImgDiv {
   width: 45%;
@@ -26,4 +28,30 @@
 
 .introImg {
   width: 100%;
+}
+
+.introContentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gridDiv {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5);
+  gap: 40px;
+}
+
+.contentDiv {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.H2HeaderDiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
 }
