@@ -2,12 +2,17 @@ import styles from "./EducationPage.module.css";
 import introImg from "../../assets/introImg.jpeg";
 import Button from "../../components/Button/Button";
 import GridItem from "../../components/GridItem/GridItem";
-
-const handleGetQuoteClick = () => {
-  window.location.href = "https://www.xometry.com/quoting/home/?";
-};
+import Slider from "../../components/Slider/Slider";
 
 export default function EducationPage() {
+  const handleGetQuoteClick = () => {
+    window.location.href = "https://www.xometry.com/quoting/home/?";
+  };
+  const items = [
+    { title: "Slide 1", description: "This is the first slide." },
+    { title: "Slide 2", description: "This is the second slide." },
+    { title: "Slide 3", description: "This is the third slide." },
+  ];
   return (
     <>
       <div className={styles.marginDiv} style={{ backgroundColor: "#e6f0fc" }}>
@@ -83,6 +88,7 @@ export default function EducationPage() {
         <div className={styles.contentDiv}>
           <div className={styles.H2HeaderDiv}>
             <h2>Students Projects Made With Xometry</h2>
+            <Slider items={items}></Slider>
           </div>
         </div>
       </div>

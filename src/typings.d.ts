@@ -4,6 +4,7 @@ declare module "*.css";
 
 declare module "*.png";
 declare module "*.svg";
+declare module "swiper/css";
 
 declare module "*.jpeg";
 
