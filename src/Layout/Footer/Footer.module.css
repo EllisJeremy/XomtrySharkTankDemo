@@ -1,0 +1,10 @@
+.headerImg {
+  height: 100%;
+}
+.header {
+  background-color: white;
+  height: 448px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}

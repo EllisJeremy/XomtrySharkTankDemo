@@ -139,20 +139,35 @@ export default function EducationPage() {
         <div className={styles.contentDiv} style={{ width: "1380px", marginBottom: "75px" }}>
           <div className={styles.H2HeaderDiv}>
             <h2>Student Projects Made With Xometry</h2>
-            <Slider items={items}></Slider>
           </div>
+            <Slider items={items}></Slider>
         </div>
       </div>
 
-      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
+      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}>
         <div className={styles.contentDiv}>
           <div className={styles.H2HeaderDiv}>
             <h2>Xometry Education Services</h2>
-            <div className={styles.servicesGridDiv}>
+
+          </div>
+                      <div className={styles.servicesGridDiv}>
               <div className={styles.servicesItemDiv}></div>
               <div className={styles.servicesItemDiv}></div>
               <div className={styles.servicesItemDiv}></div>
               <div className={styles.servicesItemDiv}></div>
+            </div>
+        </div>
+      </div>
+
+      <div className={styles.marginDiv} style={{ backgroundColor: "#e6f0fc" }}>
+        <div className={styles.introDiv}>
+          <div className={styles.introContentDiv}>
+            <h2 style={{marginBottom: "25px"}}>
+               Ready to Bring Your Project to Life?
+            </h2>
+
+            <div onClick={handleGetQuoteClick}>
+              <Button text={"Upload Your CAD Files & Get an Instant Quote"} />
             </div>
           </div>
         </div>
