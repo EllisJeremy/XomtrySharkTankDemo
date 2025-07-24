@@ -1,7 +1,7 @@
 import styles from "./EducationPage.module.css";
 import introImg from "../../assets/introImg.jpeg";
 import Button from "../../components/Button/Button";
-import GridItem from "../../components/Button/GridItem/GridItem";
+import GridItem from "../../components/GridItem/GridItem";
 
 const handleGetQuoteClick = () => {
   window.location.href = "https://www.xometry.com/quoting/home/?";
@@ -75,6 +75,14 @@ export default function EducationPage() {
               title="Quality Assurance & Control"
               description="Our integrated quality system includes expert engineers, quality labs, and trusted manufacturing partners to ensure your parts are delivered with the precision, documentation, and consistency you need."
             />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
+        <div className={styles.contentDiv}>
+          <div className={styles.H2HeaderDiv}>
+            <h2>Students Projects Made With Xometry</h2>
           </div>
         </div>
       </div>

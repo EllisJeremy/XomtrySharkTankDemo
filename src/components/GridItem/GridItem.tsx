@@ -1,5 +1,5 @@
 import styles from "./GridItem.module.css";
-import XometryX from "../../../assets/XometryX.svg";
+import XometryX from "../../assets/XometryX.svg";
 
 type ButtonProps = {
   title: string;
