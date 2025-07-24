@@ -4,15 +4,52 @@ import Button from "../../components/Button/Button";
 import GridItem from "../../components/GridItem/GridItem";
 import Slider from "../../components/Slider/Slider";
 
+import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
+import UCIrvineProject from "../../assets/UCIrvineProject.avif";
+
 export default function EducationPage() {
   const handleGetQuoteClick = () => {
     window.location.href = "https://www.xometry.com/quoting/home/?";
   };
   const items = [
-    { title: "Slide 1", description: "This is the first slide." },
-    { title: "Slide 2", description: "This is the second slide." },
-    { title: "Slide 3", description: "This is the third slide." },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
+    {
+      schoolName: "UC Irvine",
+      schoolLogo: UCIrvineLogo,
+      projectImg: UCIrvineProject,
+      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+    },
   ];
+
   return (
     <>
       <div className={styles.marginDiv} style={{ backgroundColor: "#e6f0fc" }}>
@@ -85,9 +122,9 @@ export default function EducationPage() {
       </div>
 
       <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
-        <div className={styles.contentDiv}>
+        <div className={styles.contentDiv} style={{ width: "1360px" }}>
           <div className={styles.H2HeaderDiv}>
-            <h2>Students Projects Made With Xometry</h2>
+            <h2>Student Projects Made With Xometry</h2>
             <Slider items={items}></Slider>
           </div>
         </div>
