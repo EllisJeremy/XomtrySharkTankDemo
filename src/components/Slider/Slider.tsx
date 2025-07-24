@@ -12,15 +12,21 @@ type SomeItemType = {
   schoolLogo: string;
   projectImg: string;
   description: string;
+  link: string;
 };
 
 type SliderProps = {
   items: SomeItemType[];
 };
 
+const goToLink = (link: string) => {
+    window.location.href = link;
+  };
+
 const Card = ({ item }: { item: SomeItemType }) => (
+  
   <>
-    <div className={styles.cardDiv}>
+    <div className={styles.cardDiv} onClick={() => goToLink(item.link)}>
       <div className={styles.schoolDiv}>
         <h3 style={{ fontSize: "25px" }}>{item.schoolName}</h3>{" "}
         <img src={item.schoolLogo} />
@@ -45,14 +51,13 @@ export default function Slider({ items }: SliderProps) {
       <button onClick={slidePrev} className={styles.button}>
         <img src={arrowLeft}></img>
       </button>
-
+      
       <Swiper
         loop={true}
         slidesPerView={4}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
-        style={{ flex: 1 }}
       >
         {items.map((item, i) => (
           <SwiperSlide key={i}>
@@ -60,7 +65,7 @@ export default function Slider({ items }: SliderProps) {
           </SwiperSlide>
         ))}
       </Swiper>
-
+        
       <button onClick={slideNext} className={styles.button}>
         <img src={arrowRight}></img>
       </button>

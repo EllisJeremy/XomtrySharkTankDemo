@@ -8,6 +8,7 @@ declare module "swiper/css";
 declare module "*.avif";
 
 declare module "*.jpeg";
+declare module "*.webp";
 
 /*
 import 'react';

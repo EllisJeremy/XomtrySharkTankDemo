@@ -7,6 +7,12 @@ import Slider from "../../components/Slider/Slider";
 import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
 import UCIrvineProject from "../../assets/UCIrvineProject.avif";
 
+import UCSanDiegoLogo from "../../assets/UCSanDiegoLogo.png";
+import UCSanDiegoProject from "../../assets/UCSanDiegoProject.avif";
+
+import UPennProject from "../../assets/UPennProject.avif";
+import UPennLogo from "../../assets/UPennLogo.png";
+
 export default function EducationPage() {
   const handleGetQuoteClick = () => {
     window.location.href = "https://www.xometry.com/quoting/home/?";
@@ -17,37 +23,45 @@ export default function EducationPage() {
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
+    },
+    {
+      schoolName: "UC San Diego",
+      schoolLogo: UCSanDiegoLogo,
+      projectImg: UCSanDiegoProject,
+      description: "These Students Invented a Way to Brew Beer on the Moon",
+      link: "https://www.xometry.com/resources/case-studies/these-students-invented-a-way-to-brew-beer-on-the-moon/",
+    },
+    {
+      schoolName: "U Penn",
+      schoolLogo: UPennLogo,
+      projectImg: UPennProject,
+      description:
+        "UPenn Racing Team Hopes to Shatter Records With Xometry's Help",
+        link: "https://www.xometry.com/resources/case-studies/upenn-team-hopes-to-shatter-records-again-with-xometrys-help/",
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
     },
-    {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-    },
-    {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-    },
+   
   ];
 
   return (
@@ -121,11 +135,25 @@ export default function EducationPage() {
         </div>
       </div>
 
-      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
-        <div className={styles.contentDiv} style={{ width: "1360px" }}>
+      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}>
+        <div className={styles.contentDiv} style={{ width: "1380px", marginBottom: "75px" }}>
           <div className={styles.H2HeaderDiv}>
             <h2>Student Projects Made With Xometry</h2>
             <Slider items={items}></Slider>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8" }}>
+        <div className={styles.contentDiv}>
+          <div className={styles.H2HeaderDiv}>
+            <h2>Xometry Education Services</h2>
+            <div className={styles.servicesGridDiv}>
+              <div className={styles.servicesItemDiv}></div>
+              <div className={styles.servicesItemDiv}></div>
+              <div className={styles.servicesItemDiv}></div>
+              <div className={styles.servicesItemDiv}></div>
+            </div>
           </div>
         </div>
       </div>
