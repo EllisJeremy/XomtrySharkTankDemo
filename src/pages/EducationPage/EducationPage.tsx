@@ -74,7 +74,7 @@ export default function EducationPage() {
             </h1>
             <h3>
               Turn your ideas into real-world parts with fast lead times, expert
-              feedback, and industry-grade quality — all with an exclusive 7%
+              feedback, and industry-grade quality — all with an exclusive 10%
               academic discount.
             </h3>
             <div onClick={handleGetQuoteClick}>
@@ -97,7 +97,7 @@ export default function EducationPage() {
           <div className={styles.gridDiv}>
             <GridItem
               title="Exclusive Student Discount"
-              description="Engineering students and university teams get a 7% academic discount on all custom parts ordered through Xometry. Build your prototypes affordably without compromising on quality or speed."
+              description="Engineering students and university teams get a 10% academic discount on all custom parts ordered through Xometry. Build your prototypes affordably without compromising on quality or speed."
             />
 
             <GridItem
@@ -158,10 +158,30 @@ export default function EducationPage() {
             <h2>Xometry Education Services</h2>
           </div>
           <div className={styles.servicesGridDiv}>
-            <div className={styles.servicesItemDiv}></div>
-            <div className={styles.servicesItemDiv}></div>
-            <div className={styles.servicesItemDiv}></div>
-            <div className={styles.servicesItemDiv}></div>
+            <div className={styles.servicesItemDiv}>
+              <div className={styles.servicesItemTitleDiv}>
+                <div>
+                  <h3 style={{ fontSize: "27px", fontWeight: "400" }}>
+                    Student Resources
+                  </h3>
+                  <p style={{ marginBottom: "none" }}>
+                    explore items to learn about whatever
+                  </p>
+                </div>
+                <img src={UPennLogo} />
+              </div>
+            </div>
+            <div className={styles.servicesItemDiv}>
+              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>Teamspace</h3>
+            </div>
+            <div className={styles.servicesItemDiv}>
+              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>Thomas</h3>
+            </div>
+            <div className={styles.servicesItemDiv}>
+              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>
+                Ambassador
+              </h3>
+            </div>
           </div>
         </div>
       </div>
