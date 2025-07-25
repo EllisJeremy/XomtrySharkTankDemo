@@ -13,6 +13,11 @@ import UCSanDiegoProject from "../../assets/UCSanDiegoProject.avif";
 import UPennProject from "../../assets/UPennProject.avif";
 import UPennLogo from "../../assets/UPennLogo.png";
 
+import thomas from "../../assets/thomas.avif";
+import teamspace from "../../assets/teamspace.svg";
+import resources from "../../assets/resources.svg";
+import talk from "../../assets/talk.svg";
+
 export default function EducationPage() {
   const handleGetQuoteClick = () => {
     window.location.href = "https://www.xometry.com/quoting/home/?";
@@ -114,22 +119,6 @@ export default function EducationPage() {
               title="DFM Feedback"
               description="We help students and engineers refine their designs with real-time Design for Manufacturing (DFM) feedback. Whether it's CNC, 3D printing, or sheet metal, your part is reviewed for cost-effectiveness and manufacturability."
             />
-            <GridItem
-              title="Endless Options Available"
-              description="From over 130 materials to dozens of surface finishes and tolerances, Xometry offers thousands of possible combinations. Our network supports even tight tolerances for highly customized, production-ready parts."
-            />
-            <GridItem
-              title="Special Finishing Options"
-              description="Improve aesthetics or mechanical properties with anodizing, polishing, electroplating, powder coating, heat treatment, and more. We also support custom finishes for strength, water-resistance, or biocompatibility."
-            />
-            <GridItem
-              title="Rapid Prototyping"
-              description="Save time and budget while developing functional prototypes. Our Instant Quoting Engine helps you explore technical alternatives quickly, and our team can assist with design feedback from start to finish."
-            />
-            <GridItem
-              title="Quality Assurance & Control"
-              description="Our integrated quality system includes expert engineers, quality labs, and trusted manufacturing partners to ensure your parts are delivered with the precision, documentation, and consistency you need."
-            />
           </div>
         </div>
       </div>
@@ -161,26 +150,46 @@ export default function EducationPage() {
             <div className={styles.servicesItemDiv}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
-                  <h3 style={{ fontSize: "27px", fontWeight: "400" }}>
-                    Student Resources
+                  <h3 style={{ fontSize: "27px" }}>Student Resources</h3>
+                  <h3 style={{ marginBottom: "none" }}>
+                    Expand your knowledge in 3D printing, machining, and more.
                   </h3>
-                  <p style={{ marginBottom: "none" }}>
-                    explore items to learn about whatever
-                  </p>
                 </div>
-                <img src={UPennLogo} />
+                <img src={resources} />
               </div>
             </div>
             <div className={styles.servicesItemDiv}>
-              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>Teamspace</h3>
+              <div className={styles.servicesItemTitleDiv}>
+                <div>
+                  <h3 style={{ fontSize: "27px" }}>Teamspace</h3>
+                  <h3 style={{ marginBottom: "none" }}>
+                    Collaborate with your teammates on projects.
+                  </h3>
+                </div>
+                <img src={teamspace} />
+              </div>
             </div>
             <div className={styles.servicesItemDiv}>
-              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>Thomas</h3>
+              <div className={styles.servicesItemTitleDiv}>
+                <div>
+                  <h3 style={{ fontSize: "27px" }}>Thomas</h3>
+                  <h3 style={{ marginBottom: "none" }}>
+                    Connect directly with our network of trusted suppliers.
+                  </h3>
+                </div>
+                <img src={thomas} style={{ transform: "scale(1.2)" }} />
+              </div>
             </div>
             <div className={styles.servicesItemDiv}>
-              <h3 style={{ fontSize: "27px", fontWeight: "400" }}>
-                Ambassador
-              </h3>
+              <div className={styles.servicesItemTitleDiv}>
+                <div>
+                  <h3 style={{ fontSize: "27px" }}>Ambassadors</h3>
+                  <h3 style={{ marginBottom: "none" }}>
+                    Work with Xometry to market to your school.
+                  </h3>
+                </div>
+                <img src={talk} />
+              </div>
             </div>
           </div>
         </div>
