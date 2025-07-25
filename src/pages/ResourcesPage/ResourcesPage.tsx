@@ -1,5 +1,5 @@
 import styles from './ResourcesPage.module.css';
-import cncImg from '../../assets/CNC.png';
+import stuImg from '../../assets/students.jpeg';
 import ArticleSlider from '../../components/Slider/ArticleSlider';
 import type { ArticleType } from '../../components/Slider/ArticleSlider';
 
@@ -119,11 +119,11 @@ export default function ResourcesPage() {
               Student Resources
             </h1>
             <p className={styles.pageDescription}>
-        Explore our consolidated library of resources for students. Curated for students who are just starting out in the field of manufacturing.
+            Welcome to your dedicated student hub for mastering manufacturing! Whether you're designing your first prototype or pushing the boundaries of a research project, our curated guides, tutorials, and expert insights are here to help you turn your ideas into reality.
       </p>
           </div>
           <div className={styles.introImgDiv}>
-            <img src={cncImg} className={styles.introImg} alt="Introduction" />
+            <img src={stuImg} className={styles.introImg} alt="Introduction" />
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function ResourcesPage() {
               <div>
                 <h2 className={styles.sectionTitle}>Design Guides</h2>
                 <p className={styles.sectionDescription}>
-                  In-depth design guides full of best practices for all manufacturing processes.
+                Perfect for every student designer, these guides cover essential best practices for creating parts across all manufacturing processes.
                 </p>
               </div>
               <a
@@ -157,7 +157,7 @@ export default function ResourcesPage() {
               <div>
                 <h2 className={styles.sectionTitle}>3D Printing Design</h2>
                 <p className={styles.sectionDescription}>
-                  The latest news, trends, and manufacturing design tips for additive manufacturing.
+                New to additive manufacturing? Dive in with our expert guides on choosing the right materials, optimizing your designs, and preparing your files for perfect 3D prints every time.
                 </p>
               </div>
               <a
@@ -178,7 +178,7 @@ export default function ResourcesPage() {
               <div>
                 <h2 className={styles.sectionTitle}>Machining Design</h2>
                 <p className={styles.sectionDescription}>
-                  The latest news, trends, and manufacturing design tips for custom machined and fabricated parts.
+                Get started with CNC machining and fabrication! Explore different processes, understand material considerations, and learn to refine your designs for real-world, precision-engineered parts, even if you're just beginning.
                 </p>
               </div>
               <a
