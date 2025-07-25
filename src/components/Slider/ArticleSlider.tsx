@@ -60,7 +60,7 @@ export default function ArticleSlider({ articles, cardStyles }: ArticleSliderPro
       <Swiper
         loop={true}
         slidesPerView={3}
-        spaceBetween={24}
+        spaceBetween={0}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
