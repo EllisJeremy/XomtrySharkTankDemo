@@ -1,10 +1,12 @@
-.headerImg {
+.footerImg {
   height: 100%;
+  margin-left: 30px;
 }
-.header {
+.footer {
   background-color: white;
   height: 448px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-color: #092c47;
 }

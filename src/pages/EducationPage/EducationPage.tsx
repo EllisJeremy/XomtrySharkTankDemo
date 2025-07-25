@@ -23,7 +23,7 @@ export default function EducationPage() {
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
     },
     {
       schoolName: "UC San Diego",
@@ -38,30 +38,29 @@ export default function EducationPage() {
       projectImg: UPennProject,
       description:
         "UPenn Racing Team Hopes to Shatter Records With Xometry's Help",
-        link: "https://www.xometry.com/resources/case-studies/upenn-team-hopes-to-shatter-records-again-with-xometrys-help/",
+      link: "https://www.xometry.com/resources/case-studies/upenn-team-hopes-to-shatter-records-again-with-xometrys-help/",
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
     },
     {
       schoolName: "UC Irvine",
       schoolLogo: UCIrvineLogo,
       projectImg: UCIrvineProject,
       description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/" ,
+      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
     },
-   
   ];
 
   return (
@@ -135,35 +134,46 @@ export default function EducationPage() {
         </div>
       </div>
 
-      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}>
-        <div className={styles.contentDiv} style={{ width: "1380px", marginBottom: "75px" }}>
+      <div
+        className={styles.marginDiv}
+        style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}
+      >
+        <div
+          className={styles.contentDiv}
+          style={{ width: "1380px", marginBottom: "75px" }}
+        >
           <div className={styles.H2HeaderDiv}>
             <h2>Student Projects Made With Xometry</h2>
           </div>
-            <Slider items={items}></Slider>
+          <Slider items={items}></Slider>
         </div>
       </div>
 
-      <div className={styles.marginDiv} style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}>
+      <div
+        className={styles.marginDiv}
+        style={{ backgroundColor: "#f4f7f8", marginBottom: "0px" }}
+      >
         <div className={styles.contentDiv}>
           <div className={styles.H2HeaderDiv}>
             <h2>Xometry Education Services</h2>
-
           </div>
-                      <div className={styles.servicesGridDiv}>
-              <div className={styles.servicesItemDiv}></div>
-              <div className={styles.servicesItemDiv}></div>
-              <div className={styles.servicesItemDiv}></div>
-              <div className={styles.servicesItemDiv}></div>
-            </div>
+          <div className={styles.servicesGridDiv}>
+            <div className={styles.servicesItemDiv}></div>
+            <div className={styles.servicesItemDiv}></div>
+            <div className={styles.servicesItemDiv}></div>
+            <div className={styles.servicesItemDiv}></div>
+          </div>
         </div>
       </div>
 
-      <div className={styles.marginDiv} style={{ backgroundColor: "#e6f0fc" }}>
+      <div
+        className={styles.marginDiv}
+        style={{ backgroundColor: "#e6f0fc", marginBottom: "0px" }}
+      >
         <div className={styles.introDiv}>
           <div className={styles.introContentDiv}>
-            <h2 style={{marginBottom: "25px"}}>
-               Ready to Bring Your Project to Life?
+            <h2 style={{ marginBottom: "25px" }}>
+              Ready to Bring Your Project to Life?
             </h2>
 
             <div onClick={handleGetQuoteClick}>

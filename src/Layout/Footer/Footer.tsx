@@ -1,10 +1,10 @@
-import styles from "./Header.module.css";
-import header from "../../assets/header.png";
+import styles from "./Footer.module.css";
+import footer from "../../assets/footer.png";
 
 export default function Footer() {
   return (
-    <header className={styles.footer}>
-      <img src={header} className={styles.headerImg}></img>
-    </header>
+    <footer className={styles.footer}>
+      <img src={footer} className={styles.footerImg}></img>
+    </footer>
   );
 }
