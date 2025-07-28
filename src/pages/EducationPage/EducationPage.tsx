@@ -19,6 +19,11 @@ import teamspace from "../../assets/teamspace.svg";
 import resources from "../../assets/resources.svg";
 import talk from "../../assets/talk.svg";
 
+import print from "../../assets/3DPint.svg"
+import cut from "../../assets/cut.svg"
+import cnc from "../../assets/cnc.svg"
+
+
 export default function EducationPage() {
   const goToLink = (link: string) => {
     window.location.href = link;
@@ -208,7 +213,7 @@ export default function EducationPage() {
         className={styles.marginDiv}
         style={{ backgroundColor: "#e6f0fc", marginBottom: "0px" }}
       >
-        <div className={styles.introDiv}>
+        <div className={styles.introDiv} style={{justifyContent: "space-between"}}>
           <div className={styles.introContentDiv}>
             <h2 style={{ marginBottom: "25px" }}>
               Ready to Bring Your Project to Life?
@@ -217,6 +222,11 @@ export default function EducationPage() {
             <div onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}>
               <Button text={"Upload Your CAD Files & Get an Instant Quote"} />
             </div>
+          </div>
+          <div style={{justifyContent: "space-between", display: "flex", gap: "20px"}}>
+            <img src={cnc} style={{height: "100%"}}/>
+            <img src={cut} style={{height: "100%"}}/>
+            <img src={print} style={{height: "100%"}}/>
           </div>
         </div>
       </div>
