@@ -4,6 +4,8 @@ import Button from "../../components/Button/Button";
 import GridItem from "../../components/GridItem/GridItem";
 import Slider from "../../components/Slider/Slider";
 import { Link } from "react-router-dom";
+import Modal from "../../components/Modal/Modal";
+import { useModalStore } from "../../store"; 
 
 import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
 import UCIrvineProject from "../../assets/UCIrvineProject.avif";
@@ -25,6 +27,8 @@ import cnc from "../../assets/cnc.svg"
 
 
 export default function EducationPage() {
+  const setModal = useModalStore((state) => state.setModal);
+
   const goToLink = (link: string) => {
     window.location.href = link;
   };
@@ -192,7 +196,7 @@ export default function EducationPage() {
               <h4 className={styles.readMore}>Find Suppliers →</h4>
 
             </div>
-            <div className={styles.servicesItemDiv} onClick={() => goToLink("")}>
+            <div className={styles.servicesItemDiv} onClick={setModal}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Ambassadors</h3>
@@ -205,6 +209,7 @@ export default function EducationPage() {
               <h4 className={styles.readMore}>Become an Ambassador →</h4>
 
             </div>
+            <Modal />
           </div>
         </div>
       </div>
