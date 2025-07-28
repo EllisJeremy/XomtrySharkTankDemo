@@ -63,3 +63,27 @@
 .descriptionDiv {
   padding-top: 20px;
 }
+
+.readMore{
+  color: #0e6cf1;
+  margin-top: 12px;
+  font-size: 14px;
+  position: relative;
+  line-height: 19px;
+}
+
+.cardDiv:hover .readMore::after {
+  width: 27.9%;
+}
+
+.readMore::after {
+  content: "";
+  position: absolute;
+  z-index: 1000000;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px; 
+  background-color: #0e6cf1;
+  transition: width 0.3s ease;
+}
