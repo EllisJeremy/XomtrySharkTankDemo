@@ -70,10 +70,11 @@
   font-size: 14px;
   position: relative;
   line-height: 19px;
+  display: inline;
 }
 
 .cardDiv:hover .readMore::after {
-  width: 27.9%;
+  width: calc(100% - 17.5px);
 }
 
 .readMore::after {

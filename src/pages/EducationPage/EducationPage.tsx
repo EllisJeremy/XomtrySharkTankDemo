@@ -3,6 +3,7 @@ import introImg from "../../assets/introImg.jpeg";
 import Button from "../../components/Button/Button";
 import GridItem from "../../components/GridItem/GridItem";
 import Slider from "../../components/Slider/Slider";
+import { Link } from "react-router-dom";
 
 import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
 import UCIrvineProject from "../../assets/UCIrvineProject.avif";
@@ -19,8 +20,8 @@ import resources from "../../assets/resources.svg";
 import talk from "../../assets/talk.svg";
 
 export default function EducationPage() {
-  const handleGetQuoteClick = () => {
-    window.location.href = "https://www.xometry.com/quoting/home/?";
+  const goToLink = (link: string) => {
+    window.location.href = link;
   };
   const items = [
     {
@@ -82,7 +83,7 @@ export default function EducationPage() {
               feedback, and industry-grade quality — all with an exclusive 10%
               academic discount.
             </h3>
-            <div onClick={handleGetQuoteClick}>
+            <div onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}>
               <Button text={"Get Your Instant Quote"} />
             </div>
           </div>
@@ -147,7 +148,7 @@ export default function EducationPage() {
             <h2>Xometry Education Services</h2>
           </div>
           <div className={styles.servicesGridDiv}>
-            <div className={styles.servicesItemDiv}>
+            <Link className={styles.servicesItemDiv} to = {"/resources"}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Student Resources</h3>
@@ -157,8 +158,10 @@ export default function EducationPage() {
                 </div>
                 <img src={resources} />
               </div>
-            </div>
-            <div className={styles.servicesItemDiv}>
+              <h4 className={styles.readMore}>Start Learning Now →</h4>
+
+            </Link>
+            <div className={styles.servicesItemDiv} onClick={() => goToLink("https://www.xometry.com/xometry-enterprise/teamspace/")}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Teamspace</h3>
@@ -168,8 +171,10 @@ export default function EducationPage() {
                 </div>
                 <img src={teamspace} />
               </div>
+                <h4 className={styles.readMore}>Create Your Team →</h4>
+              
             </div>
-            <div className={styles.servicesItemDiv}>
+            <div className={styles.servicesItemDiv} onClick={() => goToLink("https://www.thomasnet.com/")}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Thomas</h3>
@@ -179,8 +184,10 @@ export default function EducationPage() {
                 </div>
                 <img src={thomas} style={{ transform: "scale(1.2)" }} />
               </div>
+              <h4 className={styles.readMore}>Find Suppliers →</h4>
+
             </div>
-            <div className={styles.servicesItemDiv}>
+            <div className={styles.servicesItemDiv} onClick={() => goToLink("")}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Ambassadors</h3>
@@ -190,6 +197,8 @@ export default function EducationPage() {
                 </div>
                 <img src={talk} />
               </div>
+              <h4 className={styles.readMore}>Become an Ambassador →</h4>
+
             </div>
           </div>
         </div>
@@ -205,7 +214,7 @@ export default function EducationPage() {
               Ready to Bring Your Project to Life?
             </h2>
 
-            <div onClick={handleGetQuoteClick}>
+            <div onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}>
               <Button text={"Upload Your CAD Files & Get an Instant Quote"} />
             </div>
           </div>

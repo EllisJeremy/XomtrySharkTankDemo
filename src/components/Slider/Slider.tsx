@@ -35,7 +35,7 @@ const Card = ({ item }: { item: SomeItemType }) => (
       </div>
       <div className={styles.descriptionDiv}></div>
       <h3>{item.description}</h3>
-      <h4 className={styles.readMore}>Read More  →</h4>
+      <h4 className={styles.readMore}>Read More →</h4>
     </div>
   </>
 );
