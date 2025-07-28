@@ -1,6 +1,6 @@
 
 .marginDiv {
-  background-color: #e6f0fc;
+  background-color: white;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
 .introDiv {
   padding: 40px 0px;
   display: flex;
-  gap: 100px;
+  gap: 200px;
   width: 1280px;
 }
 
@@ -22,7 +22,7 @@
   font-size: 48px;
 }
 .introImgDiv {
-  width: 45%;
+  width: 35%;
 }
 
 .introImg {
@@ -30,9 +30,9 @@
 }
 
 .container {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pageTitle {
@@ -68,6 +68,7 @@
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #e9ecef;
+  margin-top: 50px;
 }
 
 .sectionTitle {
@@ -106,19 +107,29 @@
 .articleCard {
   background: white;
   border: 1px solid #e9ecef;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.25s;
   min-height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 12px;
+  margin: 20px 10px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(14, 108, 241, 0.1);
+  border-top: none;
+
 }
 
 .articleCard:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: #ccc;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
+
+.articleCard:active {
+
 }
 
 .articleType {

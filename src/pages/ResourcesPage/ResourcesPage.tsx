@@ -112,7 +112,7 @@ export default function ResourcesPage() {
 
   return (
     <>
-      <div className={styles.marginDiv}>
+      <div className={styles.marginDiv} >
         <div className={styles.introDiv}>
           <div className={styles.introContentDiv}>
             <h1 className={styles.header}>
@@ -127,12 +127,13 @@ export default function ResourcesPage() {
           </div>
         </div>
       </div>
+      <div className={styles.marginDiv} style={{backgroundColor: "#f4f7f8"}}>
       <div className={styles.container}>
         <div className={styles.sectionsContainer}>
           
           {/* Design Guides Section */}
           <section className={styles.section}>
-            <div className={styles.sectionHeader}>
+            <div className={styles.sectionHeader} style={{marginTop: "100px"}}>
               <div>
                 <h2 className={styles.sectionTitle}>Design Guides</h2>
                 <p className={styles.sectionDescription}>
@@ -193,6 +194,7 @@ export default function ResourcesPage() {
             <ArticleSlider articles={machiningDesign} cardStyles={styles} />
           </section>
         </div>
+      </div>
       </div>
     </>
   );
