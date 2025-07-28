@@ -2,8 +2,13 @@ import styles from './ResourcesPage.module.css';
 import stuImg from '../../assets/students.jpeg';
 import ArticleSlider from '../../components/Slider/ArticleSlider';
 import type { ArticleType } from '../../components/Slider/ArticleSlider';
+import Button from '../../components/Button/Button';
+import book from "../../assets/resources.svg"
 
 export default function ResourcesPage() {
+  const goToLink = (link: string) => {
+    window.location.href = link;
+  };
   // Article data for each section
   const designGuides: ArticleType[] = [
     {
@@ -174,7 +179,7 @@ export default function ResourcesPage() {
           </section>
 
           {/* Machining Design Section */}
-          <section className={styles.section}>
+          <section className={styles.section} style={{marginBottom: "100px"}}>
             <div className={styles.sectionHeader}>
               <div>
                 <h2 className={styles.sectionTitle}>Machining Design</h2>
@@ -195,6 +200,26 @@ export default function ResourcesPage() {
           </section>
         </div>
       </div>
+      </div>
+      <div
+        className={styles.marginDiv}
+        style={{ backgroundColor: "#e6f0fc", marginBottom: "0px" }}
+      >
+        <div className={styles.introDiv} style={{justifyContent: "space-between"}}>
+          <div className={styles.introContentDiv}>
+            <h2 style={{ marginBottom: "25px" }}>
+              All Done Learning?
+            </h2>
+
+            <div onClick={() => goToLink("/")}>
+              <Button text={"Return to Student Page"} />
+            </div>
+          </div>
+          <div style={{justifyContent: "space-between", display: "flex", gap: "20px"}}>
+                      <img src={book} style={{height: "100%"}}/>
+          
+          </div>
+        </div>
       </div>
     </>
   );
