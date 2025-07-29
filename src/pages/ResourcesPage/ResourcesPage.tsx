@@ -124,8 +124,11 @@ export default function ResourcesPage() {
               Student Resources
             </h1>
             <p className={styles.pageDescription}>
-            Welcome to your dedicated student hub for mastering manufacturing! Whether you're designing your first prototype or pushing the boundaries of a research project, our curated guides, tutorials, and expert insights are here to help you turn your ideas into reality.
-      </p>
+              Welcome to your dedicated student hub for mastering manufacturing! Whether you're designing your first prototype or pushing the boundaries of a research project, our curated guides, tutorials, and expert insights are here to help you turn your ideas into reality.
+            </p>
+            <div onClick={() => goToLink("https://www.xometry.com/resources/")}>
+              <Button text={"View All Xometry Resources"}></Button>
+            </div>
           </div>
           <div className={styles.introImgDiv}>
             <img src={stuImg} className={styles.introImg} alt="Introduction" />
@@ -133,8 +136,8 @@ export default function ResourcesPage() {
         </div>
       </div>
       <div className={styles.marginDiv} style={{backgroundColor: "#f4f7f8"}}>
-      <div className={styles.container}>
-        <div className={styles.sectionsContainer}>
+      <div className={styles.container}  style={{ width: "1380px" }}>
+        <div className={styles.sectionsContainer} >
           
           {/* Design Guides Section */}
           <section className={styles.section}>

@@ -23,8 +23,12 @@ type ArticleSliderProps = {
   cardStyles: any; // CSS module styles from ResourcesPage
 };
 
+const goToLink = (link: string) => {
+  window.location.href = link;
+};
+
 const ArticleCard = ({ article, cardStyles }: { article: ArticleType; cardStyles: any }) => (
-  <div className={cardStyles.articleCard}>
+  <div className={cardStyles.articleCard} onClick={() => goToLink(article.url)}>
     <div className={cardStyles.articleType}>{article.type}</div>
     <h3 className={cardStyles.articleTitle}>{article.title}</h3>
     <div className={cardStyles.articleMeta}>
@@ -35,7 +39,7 @@ const ArticleCard = ({ article, cardStyles }: { article: ArticleType; cardStyles
       {article.description}
     </p>
     <a
-      href={article.url}
+      
       target="_blank"
       rel="noopener noreferrer"
       className={article.buttonType === 'primary' ? cardStyles.primaryButton : cardStyles.secondaryButton}

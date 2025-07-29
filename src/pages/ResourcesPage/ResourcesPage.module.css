@@ -9,7 +9,7 @@
 .introDiv {
   padding: 40px 0px;
   display: flex;
-  gap: 200px;
+  gap: 100px;
   width: 1280px;
 }
 
@@ -22,7 +22,7 @@
   font-size: 48px;
 }
 .introImgDiv {
-  width: 35%;
+  width: 45%;
 }
 
 .introImg {
@@ -69,6 +69,8 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid #e9ecef;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .sectionTitle {
@@ -129,7 +131,8 @@
 }
 
 .articleCard:active {
-
+  transform: scale(1.025);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.075);
 }
 
 .articleType {
@@ -209,7 +212,7 @@
   color: #0e6cf1;
   border: 1px solid #0e6cf1;
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
@@ -221,8 +224,13 @@
 }
 
 .secondaryButton:hover {
+
+}
+
+.articleCard:hover .secondaryButton{
   background-color: #0e6cf1;
   color: white;
+  text-decoration: none;
 }
 
 .statsGrid {
