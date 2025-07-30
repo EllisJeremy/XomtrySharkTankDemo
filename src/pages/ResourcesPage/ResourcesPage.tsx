@@ -135,7 +135,7 @@ export default function ResourcesPage() {
           </div>
         </div>
       </div>
-      <div className={styles.marginDiv} style={{backgroundColor: "#f4f7f8"}}>
+      <div className={styles.marginDiv} style={{backgroundColor: "#ffffff"}}>
       <div className={styles.container}  style={{ width: "1380px" }}>
         <div className={styles.sectionsContainer} >
           
