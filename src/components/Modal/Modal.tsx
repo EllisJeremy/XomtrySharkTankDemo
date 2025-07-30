@@ -39,9 +39,10 @@ export default function Modal() {
 
         {/* Contact form */}
         <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-          <h3>Get in Touch</h3>
+          <h3>Get an interview</h3>
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="LinkedIn" required />
           <button type="submit">Submit</button>
         </form>
       </div>
