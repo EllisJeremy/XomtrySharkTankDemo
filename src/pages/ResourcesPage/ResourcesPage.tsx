@@ -283,7 +283,7 @@ export default function ResourcesPage() {
           
           {/* Design Guides Section */}
           <section className={styles.section}>
-            <div className={styles.sectionHeader} style={{marginTop: "100px"}}>
+            <div className={styles.sectionHeader} >
               <div>
                 <h2 className={styles.sectionTitle}>Design Guides</h2>
                 <p className={styles.sectionDescription}>
