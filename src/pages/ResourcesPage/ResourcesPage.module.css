@@ -54,21 +54,21 @@
 .sectionsContainer {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .sectionHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #e9ecef;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
 }

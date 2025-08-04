@@ -10,7 +10,87 @@ export default function ResourcesPage() {
     window.location.href = link;
   };
   // Article data for each section
+  const starterGuides: ArticleType[] = [
+    {
+      type: 'Article',
+      title: 'Metal Parts Manufacturing - How to Make Custom Metal Parts',
+      author: 'By Greg Paulson',
+      description: 'Engineers and designers need to understand a part’s materials, manufacturing processes, and use cases to determine appropriate methods for creating them. This is an overview of 8 different manufacturing processes you can utilize to create custom metal parts.',
+      readTime: '15 min read',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/custom-metal-parts-manufacturing/',
+    },    
+    {
+      type: 'Article',
+      title: 'Plastic Fabrication: Definition, Purpose, How It Works, Advantages, and Examples',
+      author: 'By Dean McClements',
+      description: 'This article presents an overview of plastic fabrication, explaining its definition, purpose, methods, materials, advantages, and typical applications.',
+      readTime: '11 min read',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/plastic-fabrication/',
+    },    
+    {
+      type: 'Article',
+      title: '3D Printing vs. Traditional Manufacturing: Differences and Comparison',
+      author: 'By Dean McClements',
+      description: 'Learn what makes 3D printing different from traditional manufacturing technologies.',
+      readTime: '6 min read',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/3d-printing/3d-printing-vs-traditional-manufacturing/',
+    },    
+    {
+      type: 'Article',
+      title: 'All About the Basics of Plastic Injection Molding',
+      author: 'By Kat de Naoum',
+      description: 'The process, the machine’s components, and compatible materials',
+      readTime: '5 min read',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/injection-molding/basics-of-plastic-injection-molding/',
+    },     
+
+  ];
+
   const designGuides: ArticleType[] = [
+    {
+      type: 'Design Guide',
+      title: 'Design Guide: CNC Machining',
+      author: 'By Team Xometry',
+      description: 'With all of today’s innovative CNC machining capabilities, it’s important to understand the strengths and trade-offs of this process',
+      buttonText: 'See Guide',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/design-guides/design-guide-cnc-machining/',
+    },    
+    {
+      type: 'Design Guide',
+      title: 'Design Guide: 3D Printing Quick Reference Guides',
+      author: 'By Greg Paulson',
+      description: 'Easily compare process specifications, tolerances, materials, and finishes with our quick reference guides for the various 3D printing processes we offer!',
+      buttonText: 'See Guides',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/3d-printing/3d-printing-quick-reference-guides/',
+    },
+    {
+      type: 'Design Guide',
+      title: 'Design Guide: 3D Printing Process & Material',
+      author: 'By Team Xometry',
+      description: 'With this guide, you can quickly find the right additive process and material for your next big idea by comparing each of our 3D printing processes based on the intended application of your part.',
+      buttonText: 'See Guide',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/3d-printing/3d-printing-process-and-material-design-guide/',
+    },
+    {
+      type: 'Design Guide',
+      title: 'Design Guide: Color 3D Printing',
+      author: 'By Team Xometry',
+      description: 'In this guide, you will learn about the different aspects of 3D printing colorful parts, how to create and add color to your models, as well as the best practices and considerations to keep in mind when printing in full color.',
+      buttonText: 'See Guide',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/design-guides/design-guide-color-3d-printing/',
+    },
     {
       type: 'Article',
       title: 'Design Guide: How to Create A Good Technical Drawing',
@@ -20,28 +100,30 @@ export default function ResourcesPage() {
       buttonText: 'Read Article',
       buttonType: 'secondary',
       url: 'https://www.xometry.com/resources/design-guides/technical-drawing-best-practices/',
-    },
-    {
-      type: 'Design Guide',
-      title: 'Design Guide: 3D Printing Process & Material Design Guide',
-      author: 'By Team Xometry ',
-      description: 'With this guide, you can quickly find the right additive process and material for your next big idea by comparing each of our 3D printing processes based on the intended application of your part',
-      buttonText: 'See Guide',
-      buttonType: 'secondary',
-      url: 'https://www.xometry.com/resources/3d-printing/course-principles-of-3d-printing-design-for-industrial-engineers/',
-    },
-    {
-      type: 'Design Guide',
-      title: 'Design Guide: CNC Machining',
-      author: 'By Team Xometry',
-      description: 'With all of today’s innovative CNC machining capabilities, it’s important to understand the strengths and trade-offs of this process',
-      buttonText: 'See Guide',
-      buttonType: 'secondary',
-      url: 'https://www.xometry.com/resources/design-guides/design-guide-cnc-machining/',
     }
   ];
 
   const printingDesign: ArticleType[] = [
+    {
+      type: 'Article',
+      title: 'Everything You Need to Know About 3D Printing',
+      author: 'By Dean McClements',
+      readTime: '8 min read',
+      description: 'Learn all out about this versatile manufacturing technology that continues to evolve and gain new applications.',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/3d-printing/3d-printing-guide/',
+    },
+    {
+      type: 'Article',
+      title: '3D Printer Filament: Types, Materials, Uses, and Services',
+      author: 'By Dean McClements',
+      readTime: '10 min read',
+      description: 'Learn more about the options for filament materials that are used in 3D printing.',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/3d-printing/3d-printer-filament/',
+    },
     {
       type: 'eBook',
       title: 'How to Prepare a File for 3D Printing',
@@ -53,23 +135,23 @@ export default function ResourcesPage() {
     },
     {
       type: 'Article',
-      title: 'The Advantages of Additive Manufacturing',
-      author: 'By Greg Paulson',
-      readTime: '6 min read',
-      description: 'Because computer models and designs can be effortlessly transported electronically or even shared for download on the Internet, additive manufacturing allows businesses to quickly and cost effectively develop functional prototypes for product testing or even run a limited production line without having to worry about line limits and minimums while also allowing quick modifications when necessary.',
+      title: '10 Steps on How To Remove Supports From 3D Prints',
+      author: 'By Dean McClements',
+      readTime: '9 min read',
+      description: 'In this article, we look at 10 steps explaining how to remove supports from 3D prints. We also answer a few of the most common questions regarding 3D-printed-support removal.',
       buttonText: 'Read Article',
       buttonType: 'secondary',
-      url: 'https://www.xometry.com/resources/3d-printing/additive-manufacturing-advantages/',
+      url: 'https://www.xometry.com/resources/3d-printing/how-to-remove-supports-from-3d-prints/',
     },
     {
       type: 'Article',
-      title: '3D Printer Filament: Types, Materials, Uses, and Services',
+      title: 'Slicer in 3D Printing: Definition, Features, and How it Works',
       author: 'By Dean McClements',
-      readTime: '10 min read',
-      description: 'Learn more about the options for filament materials that are used in 3D printing.',
+      readTime: '8 min read',
+      description: 'Learn about the role that slicer software plays in 3D printing.',
       buttonText: 'Read Article',
       buttonType: 'secondary',
-      url: 'https://www.xometry.com/resources/3d-printing/3d-printer-filament/',
+      url: 'https://www.xometry.com/resources/3d-printing/what-is-a-slicer-in-3d-printing/',
     },
     {
       type: 'Interactive Course',
@@ -94,6 +176,55 @@ export default function ResourcesPage() {
       url: 'https://www.xometry.com/resources/machining/what-is-cnc-machining/',
     },
     {
+      type: 'Article',
+      title: 'Everything You Need to Know About CNC Milling',
+      author: 'By Kat de Naoum',
+      readTime: '8 min read',
+      description: 'Learn more about the CNC milling process and methods.',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/what-is-cnc-milling/',
+    },
+    {
+      type: 'Article',
+      title: 'Your Guide to CNC Programming and How it Works',
+      author: 'By Kat de Naoum',
+      readTime: '7 min read',
+      description: 'Plus, learn how it’s used and all the important codes',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/cnc-programming/',
+    },
+    {
+      type: 'Article',
+      title: 'All About End Milling',
+      author: 'By Dean McClements',
+      readTime: '12 min read',
+      description: 'What Is End Milling?.',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/end-milling/',
+    },
+    {
+      type: 'Article',
+      title: 'Sheet Metal Bending: The Basics',
+      author: 'Greg Paulson',
+      readTime: '2 min read',
+      description: 'An overview of minimum bend radii and bend orientation.',
+      buttonText: 'Read Article',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/machining/the-basics-of-bending-sheet-metal/',
+    },
+    {
+      type: 'eBook',
+      title: 'CNC Metal Finishes',
+      author: 'By Team Xometry',
+      description: 'Download your copy to understand the colors, coating thicknesses, material properties, and application conformance of each surface finish or treatment.',
+      buttonText: 'See eBook',
+      buttonType: 'secondary',
+      url: 'https://www.xometry.com/resources/ebooks/ebook-cnc-metal-finishes/',
+    },
+    {
       type: 'Video',
       title: 'Video: 10 Tips to Improve Your CAD Designs for CNC Machining',
       author: 'By Joel Schadegg',
@@ -103,16 +234,7 @@ export default function ResourcesPage() {
       buttonType: 'secondary',
       url: 'https://www.xometry.com/resources/machining/10-tips-improve-cad-cnc-design/',
     },
-    {
-      type: 'Article',
-      title: '9 Types of Machining Processes to Know About',
-      author: 'By Kat de Naoum',
-      readTime: '6 min read',
-      description: 'A quick guide to machining methods and when it’s best to rely on each',
-      buttonText: 'Read Article',
-      buttonType: 'secondary',
-      url: 'https://www.xometry.com/resources/machining/types-of-machining-processes/',
-    },
+
   ];
 
   return (
@@ -138,6 +260,26 @@ export default function ResourcesPage() {
       <div className={styles.marginDiv} style={{backgroundColor: "#ffffff"}}>
       <div className={styles.container}  style={{ width: "1380px" }}>
         <div className={styles.sectionsContainer} >
+          {/* Beginner Guides Section*/}
+          <section className={styles.section}>
+            <div className={styles.sectionHeader} style={{marginTop: "60px"}}>
+              <div>
+                <h2 className={styles.sectionTitle}>Getting Started</h2>
+                <p className={styles.sectionDescription}>
+                Learn the basics of manufacturing and how to get started with your first project.
+                </p>
+              </div>
+              <a
+                className={styles.viewAllButton}
+                href="https://www.xometry.com/resources/design-guides/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View All Design Guides Content
+              </a>
+            </div>
+            <ArticleSlider articles={starterGuides} cardStyles={styles} />
+          </section>
           
           {/* Design Guides Section */}
           <section className={styles.section}>
