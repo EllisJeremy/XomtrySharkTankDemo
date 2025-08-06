@@ -5,7 +5,7 @@ import GridItem from "../../components/GridItem/GridItem";
 import Slider from "../../components/Slider/Slider";
 import { Link } from "react-router-dom";
 import Modal from "../../components/Modal/Modal";
-import { useModalStore } from "../../store"; 
+import { useModalStore } from "../../store";
 
 import UCIrvineLogo from "../../assets/UCIrvineLogo.png";
 import UCIrvineProject from "../../assets/UCIrvineProject.avif";
@@ -16,15 +16,20 @@ import UCSanDiegoProject from "../../assets/UCSanDiegoProject.avif";
 import UPennProject from "../../assets/UPennProject.avif";
 import UPennLogo from "../../assets/UPennLogo.png";
 
+import pennStateLogo from "../../assets/pennStatelogo.png";
+import pennStateProject from "../../assets/pennStateProject.jpg";
+
+import warwickLogo from "../../assets/warwickLogo.svg";
+import warwickProject from "../../assets/warwickProject.webp";
+
 import thomas from "../../assets/thomas.avif";
 import teamspace from "../../assets/teamspace.svg";
 import resources from "../../assets/resources.svg";
 import talk from "../../assets/talk.svg";
 
-import print from "../../assets/3DPint.svg"
-import cut from "../../assets/cut.svg"
-import cnc from "../../assets/cnc.svg"
-
+import print from "../../assets/3DPint.svg";
+import cut from "../../assets/cut.svg";
+import cnc from "../../assets/cnc.svg";
 
 export default function EducationPage() {
   const setModal = useModalStore((state) => state.setModal);
@@ -56,25 +61,20 @@ export default function EducationPage() {
       link: "https://www.xometry.com/resources/case-studies/upenn-team-hopes-to-shatter-records-again-with-xometrys-help/",
     },
     {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
+      schoolName: "Penn State",
+      schoolLogo: pennStateLogo,
+      projectImg: pennStateProject,
+      description:
+        "Student Uses Xometry to Build Affordable 3D-Printed Prosthetic Leg",
+      link: "https://berks.psu.edu/feature/penn-state-berks-engineering-student-qualifies-3d-challenge?/",
     },
     {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
-    },
-    {
-      schoolName: "UC Irvine",
-      schoolLogo: UCIrvineLogo,
-      projectImg: UCIrvineProject,
-      description: "Xometry Helps UC Irvine Rocket Team Prepare for Spaceshot",
-      link: "https://www.xometry.com/resources/case-studies/case-study-xometry-helps-uc-irvine-rocket-team-prepare-for-spaceshot/",
+      schoolName: "U Warwick",
+      schoolLogo: warwickLogo,
+      projectImg: warwickProject,
+      description:
+        "Xometry Assists in the Production of Warwick’s Superbike Subframe",
+      link: "https://xometry.pro/en-eu/stories/warwick-electric-superbike/",
     },
   ];
 
@@ -92,7 +92,9 @@ export default function EducationPage() {
               feedback, and industry-grade quality — all with an exclusive 10%
               academic discount.
             </h3>
-            <div onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}>
+            <div
+              onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}
+            >
               <Button text={"Get Your Instant Quote"} />
             </div>
           </div>
@@ -157,7 +159,7 @@ export default function EducationPage() {
             <h2>Xometry Education Services</h2>
           </div>
           <div className={styles.servicesGridDiv}>
-            <Link className={styles.servicesItemDiv} to = {"/resources"}>
+            <Link className={styles.servicesItemDiv} to={"/resources"}>
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Student Resources</h3>
@@ -168,9 +170,15 @@ export default function EducationPage() {
                 <img src={resources} />
               </div>
               <h4 className={styles.readMore}>Start Learning Now →</h4>
-
             </Link>
-            <div className={styles.servicesItemDiv} onClick={() => goToLink("https://www.xometry.com/xometry-enterprise/teamspace/")}>
+            <div
+              className={styles.servicesItemDiv}
+              onClick={() =>
+                goToLink(
+                  "https://www.xometry.com/xometry-enterprise/teamspace/"
+                )
+              }
+            >
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Teamspace</h3>
@@ -180,10 +188,12 @@ export default function EducationPage() {
                 </div>
                 <img src={teamspace} />
               </div>
-                <h4 className={styles.readMore}>Create Your Team →</h4>
-              
+              <h4 className={styles.readMore}>Create Your Team →</h4>
             </div>
-            <div className={styles.servicesItemDiv} onClick={() => goToLink("https://www.thomasnet.com/")}>
+            <div
+              className={styles.servicesItemDiv}
+              onClick={() => goToLink("https://www.thomasnet.com/")}
+            >
               <div className={styles.servicesItemTitleDiv}>
                 <div>
                   <h3 style={{ fontSize: "27px" }}>Thomas</h3>
@@ -194,7 +204,6 @@ export default function EducationPage() {
                 <img src={thomas} style={{ transform: "scale(1.2)" }} />
               </div>
               <h4 className={styles.readMore}>Find Suppliers →</h4>
-
             </div>
             <div className={styles.servicesItemDiv} onClick={setModal}>
               <div className={styles.servicesItemTitleDiv}>
@@ -207,7 +216,6 @@ export default function EducationPage() {
                 <img src={talk} />
               </div>
               <h4 className={styles.readMore}>Become an Ambassador →</h4>
-
             </div>
             <Modal />
           </div>
@@ -218,20 +226,31 @@ export default function EducationPage() {
         className={styles.marginDiv}
         style={{ backgroundColor: "#e6f0fc", marginBottom: "0px" }}
       >
-        <div className={styles.introDiv} style={{justifyContent: "space-between"}}>
+        <div
+          className={styles.introDiv}
+          style={{ justifyContent: "space-between" }}
+        >
           <div className={styles.introContentDiv}>
             <h2 style={{ marginBottom: "25px" }}>
               Ready to Bring Your Project to Life?
             </h2>
 
-            <div onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}>
+            <div
+              onClick={() => goToLink("https://www.xometry.com/quoting/home/?")}
+            >
               <Button text={"Upload Your CAD Files & Get an Instant Quote"} />
             </div>
           </div>
-          <div style={{justifyContent: "space-between", display: "flex", gap: "20px"}}>
-            <img src={cnc} style={{height: "100%"}}/>
-            <img src={cut} style={{height: "100%"}}/>
-            <img src={print} style={{height: "100%"}}/>
+          <div
+            style={{
+              justifyContent: "space-between",
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <img src={cnc} style={{ height: "100%" }} />
+            <img src={cut} style={{ height: "100%" }} />
+            <img src={print} style={{ height: "100%" }} />
           </div>
         </div>
       </div>
